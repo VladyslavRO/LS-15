@@ -1,0 +1,19 @@
+.info {
+text-align: center;
+    &_title {
+       
+font-weight: 700;
+font-size: 48px;
+color: #262626;
+margin-bottom: 125rem;
+    }
+
+    &_desc {
+        
+font-weight: 400;
+font-size: 16px;
+
+color: #262626;
+margin-bottom: 150rem;
+    }
+}
