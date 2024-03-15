@@ -1,21 +1,32 @@
 .services {
-
+margin-bottom: 90rem;
 }
 .services-grid {
+    
     max-width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+    
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30rem;
+    }
+   
 }
 .services-item {
+transition: 1s all ease-in;
 display: flex;
+
 flex-direction: column;
+cursor: pointer;
 justify-content: center;
 align-items: center;
 border-radius: 15rem;
 max-width:320rem ;
 height: 373rem;
 background: #f9f1fe;
+
 h4{
 font-weight: 600;
 font-size: 24px;
@@ -40,4 +51,18 @@ img{
 }
 }
 }
+.services-item:hover{
+    position: relative;
+    transition: 0.5s all ease-in;
+    scale: 1.08;
+    background-color:#8842f0;
+    opacity: 1;
+   h4 , p , a , img {
+color: #fff;
 
+
+
+   }
+  
+   
+}
