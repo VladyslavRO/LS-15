@@ -251,6 +251,9 @@ body {
 }
 
 .header {
+  max-width: 1130rem;
+  transition: 0.5s all ease-in-out;
+  margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -261,6 +264,10 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
 }
 @media (max-width: 992px) {
   .header__ul {
@@ -279,6 +286,12 @@ body {
 }
 .header__ul._active {
   transform: translateX(0);
+  transition: 0.5s all ease-in-out;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: #8842f0;
+  z-index: 9;
 }
 .header__ul .icon-close {
   position: absolute;
@@ -372,6 +385,7 @@ body {
 .welcome {
   margin-top: 54px;
   margin-bottom: 111px;
+  transition: 0.5s all ease-in-out;
 }
 
 .info {
@@ -478,6 +492,16 @@ body {
   border-radius: 20rem;
   background: #f9f1fe;
 }
+.doctors-item .btn {
+  display: inline-flex;
+  align-items: center;
+  background: #8842f0;
+  border-radius: 20rem;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  color: #f9f1fe;
+}
 
 .doctor-head {
   display: flex;
@@ -495,25 +519,8 @@ body {
   flex-wrap: wrap;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.btn a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
-
 .footer {
+  width: 100%;
   background: #f9f1fe;
 }
 

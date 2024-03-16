@@ -7,12 +7,14 @@
  *  Owl Carousel - Core
  */
 .owl-carousel {
+
 	display: none;
 	width: 100%;
 	-webkit-tap-highlight-color: transparent;
 	/* position relative and z-index fix webkit rendering fonts issue */
 	position: relative;
-	z-index: 1;
+	
+	transition: 0.5s all ease-in-out;
 }
 .owl-carousel .owl-stage {
 	position: relative;
@@ -50,6 +52,7 @@
 	min-height: 1px;
 	float: left;
 	border-radius: 30px;
+	padding-right: 30rem;
 	-webkit-backface-visibility: hidden;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;

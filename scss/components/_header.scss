@@ -1,4 +1,9 @@
+
+
 .header {
+	max-width: calc(1170rem - 40rem);
+	transition: 0.5s all ease-in-out;
+	margin-inline: auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -9,6 +14,10 @@
 		display: flex;
 		align-items: center;
 		gap: 20px;
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 16px;
+		color: #000;
 
 		@include tablet {
 			position: fixed;
@@ -25,7 +34,14 @@
 		}
 
 		&._active {
-			transform: translateX(0);
+		transform: translateX(0);
+		transition: 0.5s all ease-in-out;
+		font-family: var(--font-family);
+		font-weight: 600;
+		font-size: 16px;
+		color: #8842f0;
+		z-index: 9;
+
 		}
 
 
